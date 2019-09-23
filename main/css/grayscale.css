@@ -167,6 +167,10 @@
   margin-bottom: 5rem;
 }
 
+.img-fluid {
+  width: 100vw !important;
+}
+
 .projects-section {
   padding: 10rem 0;
 }
