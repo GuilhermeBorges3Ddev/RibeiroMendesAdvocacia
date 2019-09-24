@@ -33,4 +33,14 @@
       }
     }
   }
+  textarea.form-control{
+    box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+    padding: 1.25rem 2rem !important;
+    height: auto !important;
+    font-family: 'Varela Round' !important;
+    font-size: 80% !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.15rem !important;
+    border: 0 !important;
+  }
 }
