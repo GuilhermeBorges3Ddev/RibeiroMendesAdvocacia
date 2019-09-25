@@ -2,7 +2,7 @@
 
 #mainNav {
   min-height: 56px;
-  background-color: #fff;
+  background-color: transparent !important;
 }
 
 #mainNav .navbar-toggler {
@@ -91,6 +91,7 @@
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
+  border-bottom: 0 !important;
 }
 
 .masthead h1 {
