@@ -1,22 +1,32 @@
 <?php
-if(isset($_POST['enviar'])){
-    $assunto = "solicitação de orçamento";
+// Destinatário
+$para = "ribeiromendesadvofficial@gmail.com";
 
-    // pegando os dados do form...
-    $msg = "Nome: " . $_POST["nome"] . "<br>";
-    $msg .= "Email: " . $_POST["email"] . "<br>";
-    $msg .= "Telefone: " . $_POST["telefone"] . "<p>";
-    $msg .= "Mensagem:<br>" . $_POST["mensagem"];
+// Assunto do e-mail
+$assunto = "Contato do através do site ...";
 
-    $destinatario = "ribeiromendesadvofficial@gmail.com";
+// Campos do formulário de contato
+$nome = $_POST['nome'];
+$email = $_POST['email'];
+$telefone = $_POST['tel'];
+$mensagem = $_POST['conteudo'];
 
-    // headers que prepara a mensagem
-    $headers = "MIME-Version: 1.0\r\n";
-    $headers .= "Content-type: text/html; charset=utf-8\r\n";
-    $headers .= "From: " . $_POST["nome"] . "<" . $_POST["email"] . ">\r\n";
-    $headers .= "Reply-To: " . $_POST["email"] . "\r\n";
+// Monta o corpo da mensagem com os campos
+$corpo = "<html><body>";
+$corpo .= "Nome: $nome ";
+$corpo .= "Email: $email Telefone: $telefone Mensagem: $mensagem";
+$corpo .= "</body></html>";
 
-    // envia o email...
-    mail($destinatario,$assunto,$msg,$headers);
+// Cabeçalho do e-mail
+$email_headers = implode("\n", array("From: $nome", "Reply-To: $email", "Subject: $assunto", "Return-Path: $email", "MIME-Version: 1.0", "X-Priority: 3", "Content-Type: text/html; charset=UTF-8"));
+
+//Verifica se os campos estão preenchidos para enviar então o email
+if (!empty($nome) && !empty($email) && !empty($mensagem)) {
+    mail($para, $assunto, $corpo, $email_headers);
+    $msg = "Sua mensagem foi enviada com sucesso.";
+    echo "<script>alert('$msg');window.location.assign('https://ribeiromendesadv.com.br/');</script>";
+} else {
+    $msg = "Erro ao enviar a mensagem.";
+    echo "<script>alert('$msg');window.location.assign('https://ribeiromendesadv.com.br/');</script>";
 }
 ?>
