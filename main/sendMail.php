@@ -14,7 +14,9 @@ $mensagem = $_POST['conteudo'];
 // Monta o corpo da mensagem com os campos
 $corpo = "<html><body>";
 $corpo .= "Nome: $nome ";
-$corpo .= "Email: $email Telefone: $telefone Mensagem: $mensagem";
+$corpo .= "Email: $email"; 
+$corpo .= "Telefone: $telefone";
+$corpo .= "Mensagem: $mensagem";
 $corpo .= "</body></html>";
 
 // Cabeçalho do e-mail
@@ -26,7 +28,7 @@ if (!empty($nome) && !empty($email) && !empty($mensagem)) {
     $msg = "Sua mensagem foi enviada com sucesso.";
     echo "<script>alert('$msg');window.location.assign('https://ribeiromendesadv.com.br/');</script>";
 } else {
-    $msg = "Erro ao enviar a mensagem.";
+    $msg = "Erro ao enviar a mensagem, preencha todos os campos.";
     echo "<script>alert('$msg');window.location.assign('https://ribeiromendesadv.com.br/');</script>";
 }
 ?>
