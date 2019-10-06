@@ -23,10 +23,10 @@ $email_headers .= 'From: ' .$nome.'<'.$email.'>'."\r\n";
 
 //Verifica se os campos estão preenchidos para enviar então o email
 if (mail($para, $assunto, $corpo, $email_headers)) {
-    $msg = "Sua mensagem foi enviada com sucesso. <br \> Clique em OK para continuar.";
+    $msg = "Sua mensagem foi enviada com sucesso. Clique em OK!";
     echo "<script>alert('$msg');window.location.assign('https://ribeiromendesadv.com.br/');</script>";
 } else {
-    $msg = "Erro ao enviar a mensagem, preencha todos os campos. <br \> Clique em OK para continuar.";
+    $msg = "Erro ao enviar a mensagem, preencha todos os campos. Clique em OK!";
     echo "<script>alert('$msg');window.location.assign('https://ribeiromendesadv.com.br/');</script>";
 }
 ?>
