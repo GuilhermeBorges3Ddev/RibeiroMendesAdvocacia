@@ -348,22 +348,14 @@
           <h2 class="text-white mb-3">Contatos</h2>
           <p class="text-white mb-5">Solicite uma reunião com nossa equipe:</p>
           <form class="form-inline d-flex" action="sendMail.php" method="POST">
-            <input type="name" name="nome" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputName"
-              placeholder="Entre com seu nome completo" required>
-          </form>
-          <form class="form-inline d-flex mt-5" action="sendMail.php" method="POST">
-            <input type="email" name="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail"
-              placeholder="Digite um email para que entremos em contato" required>
-          </form>
-          <form class="form-inline d-flex mt-5" action="sendMail.php" method="POST">
-            <input type="text" name="tel" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputTelphone"
-              placeholder="Digite seu número, ex: (11) 11111-1111" required>
-          </form>
-          <form class="form-group mt-5" action="sendMail.php" method="POST">
-            <textarea class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0 pl-4 pr-4 pt-3" name="conteudo"
+            <input type="name" name="nome" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0 mt-5 w-100"
+              id="inputName" placeholder="Entre com seu nome completo" required>
+            <input type="email" name="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0 mt-5 w-100"
+              id="inputEmail" placeholder="Digite um email para que entremos em contato" required>
+            <input type="text" name="tel" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0 mt-5 w-100"
+              id="inputTelphone" placeholder="Digite seu número, ex: (11) 11111-1111" required>
+            <textarea class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0 pl-4 pr-4 pt-3 mt-5 w-100" name="conteudo"
               id="inpuTextArea" placeholder="  Escreva aqui sua mensagem" rows="6" required></textarea>
-          </form>
-          <form class="form-group" action="sendMail.php" method="POST">
             <button type="submit" name="enviar" class="btn btn-primary mx-auto mt-5">Enviar</button>
           </form>
         </div>
