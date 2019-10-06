@@ -13,18 +13,21 @@ $mensagem = $_POST['conteudo'];
 
 // Monta o corpo da mensagem com os campos
 $corpo = "<html><body>";
-$corpo .= "Nome: $nome  Email: $email Telefone: $telefone Mensagem: $mensagem";
+$corpo .= "Nome: $nome <br \> Email: $email <br \> Telefone: $telefone <br \>  Mensagem: $mensagem";
 $corpo .= "</body></html>";
 
 // Cabeçalho do e-mail
-$email_headers = implode("\n", array("From: $nome", "Reply-To: $email", "Subject: $assunto", "Return-Path: $email", "MIME-Version: 1.0", "X-Priority: 3", "Content-Type: text/html; charset=UTF-8"));
+$email_headers = "MIME-Version: 1.0" . "\r\n";
+$email_headers .= "Content-Type:text/html;charset=UTF-8" . "\r\n";
+$email_headers .= 'From: ' .$nome.'<'.$email.'>'."\r\n";
 
 //Verifica se os campos estão preenchidos para enviar então o email
 if (mail($para, $assunto, $corpo, $email_headers)) {
-    $msg = "Sua mensagem foi enviada com sucesso.";
+    $msg = "Sua mensagem foi enviada com sucesso. <br \> Clique em OK para continuar.";
     echo "<script>alert('$msg');window.location.assign('https://ribeiromendesadv.com.br/');</script>";
 } else {
-    $msg = "Erro ao enviar a mensagem, preencha todos os campos.";
+    $msg = "Erro ao enviar a mensagem, preencha todos os campos. <br \> Clique em OK para continuar.";
     echo "<script>alert('$msg');window.location.assign('https://ribeiromendesadv.com.br/');</script>";
 }
 ?>
+
