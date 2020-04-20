@@ -1,0 +1,8 @@
+.stf-route {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.stf-route:hover {
+    opacity: 0.75;
+}
