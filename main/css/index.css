@@ -14,3 +14,9 @@ html {
 .stf-route:hover {
     opacity: 0.75;
 }
+
+@media screen and (max-width: 704px) {
+    #stf-table {
+        display: none !important;
+    }
+}
