@@ -19,6 +19,15 @@ html {
     font-size: 60px;
 }
 
+.grayscale-btn {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(25,25,29,1) 35%, rgba(118,122,121,1) 94%);
+}
+
+.grayscale-btn:hover {
+    opacity: 0.8;
+}
+
 @media screen and (max-width: 704px) {
     #stf-table {
         display: none !important;
