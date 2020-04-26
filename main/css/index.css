@@ -15,6 +15,10 @@ html {
     opacity: 0.75;
 }
 
+.pdf-title {
+    font-size: 60px;
+}
+
 @media screen and (max-width: 704px) {
     #stf-table {
         display: none !important;
