@@ -94,6 +94,22 @@
   border-bottom: 0 !important;
 }
 
+.masthead-pdf {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-height: 10rem;
+  padding: 15rem 0;
+  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%), url("../img/bg-masthead.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  border-bottom: 0 !important;
+}
+
+
+
 .masthead h1 {
   font-family: 'Varela Round';
   font-size: 2.5rem;
@@ -165,6 +181,11 @@
 
 .about-section {
   padding-top: 4rem;
+  background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
+}
+
+.about-section-pdf {
+  padding-top: 1rem;
   background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
 }
 
