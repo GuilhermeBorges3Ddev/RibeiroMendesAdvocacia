@@ -9,6 +9,7 @@ html {
 .stf-route {
     text-decoration: underline;
     cursor: pointer;
+    color: whitesmoke;
 }
 
 .stf-route:hover {
@@ -26,6 +27,10 @@ html {
 
 .grayscale-btn:hover {
     opacity: 0.8;
+}
+
+#stf-table {
+    font-size: 28px !important;
 }
 
 @media screen and (max-width: 704px) {
