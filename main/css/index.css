@@ -29,7 +29,7 @@ html {
     opacity: 0.8;
 }
 
-#stf-table {
+#stf-table, #contability-table {
     font-size: 28px !important;
 }
 
