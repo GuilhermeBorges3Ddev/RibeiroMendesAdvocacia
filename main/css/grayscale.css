@@ -108,6 +108,19 @@
   border-bottom: 0 !important;
 }
 
+.masthead-doc {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-height: 15rem;
+  padding: 15rem 0 90vh 0;
+  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%), url("../img/bg-masthead.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  border-bottom: 0 !important;
+}
 
 
 .masthead h1 {
@@ -229,7 +242,7 @@
 }
 
 .qr-section {
-  padding-top: 43%;
+  padding-top: 65%;
   background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
 }
 
@@ -326,6 +339,14 @@ a:focus, a:hover {
   background-color: #161616 !important;
 }
 
+.bg-gray-gradient {
+  background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(118,122,121,1) 1%, rgba(25,25,29,1) 99%);
+}
+
+.bg-mountain-gray {
+  background: rgba(118,122,121,1);
+}
+
 .bg-primary {
   background-color: #64a19d !important;
 }
@@ -336,4 +357,10 @@ a:focus, a:hover {
 
 footer {
   padding: 5rem 0;
+}
+
+#special-footer {
+  border-top: 0 transparent !important;
+  padding: 5rem 0 !important;
+  position: relative !important;
 }
