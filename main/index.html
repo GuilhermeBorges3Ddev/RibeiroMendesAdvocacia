@@ -434,6 +434,27 @@
     </div>
   </section>
 
+  <!-- Protótipo do botão de integração da Nuhh -->
+  <div class="integration-button-wrapper">
+    <div id="integration-options">
+      <h5>O que precisa?</h5>
+      <div class="integrations-options-buttons">
+        <button id="ifood-integration-button">
+          <img alt="iFood Logo" src="./img/ifoodLogo.png" height="60" width="60"  />
+        </button>
+        <button id="mercadoLivre-integration-button">
+          <img alt="Mercado Livre Logo" src="./img/mercadoLivreLoggo.png" height="60" width="60"  />
+        </button>
+      </div>
+    </div>
+    <button
+      id="integration-button"
+      onclick="hideByTagname('integration-options')"
+    >
+      <img alt="Nuhh Logo" src="./img/Nuhh.png" />
+    </button>
+  </div>
+
   <!-- Rodapé com os direitos autorais -->
   <footer class="bg-black small text-center text-white-50">
     <div class="container">
@@ -450,8 +471,9 @@
   <!-- Plugin JavaScript -->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-  <!-- Script customizado utilizado neste site -->
+  <!-- Scripts customizados utilizados neste site -->
   <script src="js/grayscale.min.js"></script>
+  <script src="js/integrations.js"></script>
 
 </body>
 
