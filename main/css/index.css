@@ -32,8 +32,26 @@ html {
     border-color: blue;
 }
 
+#integration-with-ifood,
+#integration-with-ml {
+    display: none;
+    position: fixed;
+    bottom: 18%;
+    right: 2.5%;
+    border: 3px solid red;
+    background: white;
+    height: 15rem;
+    width: 20rem;
+}
+
+#integration-with-ifood > iframe,
+#integration-with-ml > iframe {
+    height: 100%;
+    width: 100%;
+}
+
 #integration-options {
-    display: block;
+    display: none;
     position: fixed;
     bottom: 18%;
     right: 2.5%;
