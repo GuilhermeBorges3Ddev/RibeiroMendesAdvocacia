@@ -6,6 +6,85 @@ html {
     overflow-x: hidden !important;
 }
 
+.grayscale-btn {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgb(1, 1, 15) 0%, rgba(25,25,29,1) 35%, rgba(118,122,121,1) 94%);
+}
+
+.grayscale-btn:hover {
+    opacity: 0.8;
+}
+
+.integration-button-wrapper {
+    position: fixed;
+    bottom: 5%;
+    right: 2.5%;
+}
+
+#integration-button {
+    border: 3px solid red;
+    height: 69px;
+    width: 75px;
+    border-radius: 50%;
+}
+
+#integration-button:hover {
+    border-color: blue;
+}
+
+#integration-with-ifood,
+#integration-with-ml {
+    display: none;
+    position: fixed;
+    bottom: 18%;
+    right: 2.5%;
+    border: 3px solid red;
+    background: white;
+    height: 15rem;
+    width: 20rem;
+}
+
+#integration-with-ifood > iframe,
+#integration-with-ml > iframe {
+    height: 100%;
+    width: 100%;
+}
+
+#integration-options {
+    display: none;
+    position: fixed;
+    bottom: 18%;
+    right: 2.5%;
+    border: 3px solid red;
+    background: white;
+    height: 8.5rem;
+    width: 15rem;
+}
+
+#integration-options > h5 {
+    text-align: center;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+.integrations-options-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#integration-options > .integrations-options-buttons > #ifood-integration-button,
+#integration-options > .integrations-options-buttons > #mercadoLivre-integration-button {
+    text-align: center;
+    border-radius: 50%;
+    border: 3px solid black;
+}
+
+#integration-options > .integrations-options-buttons > #ifood-integration-button:hover,
+#integration-options > .integrations-options-buttons > #mercadoLivre-integration-button:hover {
+    border-color: blue;
+}
+
 .stf-route {
     text-decoration: underline;
     cursor: pointer;
@@ -20,14 +99,6 @@ html {
     font-size: 60px;
 }
 
-.grayscale-btn {
-    background: rgb(0, 0, 0);
-    background: linear-gradient(90deg, rgb(1, 1, 15) 0%, rgba(25,25,29,1) 35%, rgba(118,122,121,1) 94%);
-}
-
-.grayscale-btn:hover {
-    opacity: 0.8;
-}
 
 #stf-table {
     font-size: 31px !important;
