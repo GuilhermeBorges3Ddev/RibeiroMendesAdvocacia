@@ -13,15 +13,22 @@ html {
 }
 
 #integration-button {
-  border: 3px solid rgb(72, 255, 0);
+  border: 1px solid rgb(72, 255, 0);
   background-color: #236f21;
-  height: 69px;
-  width: 75px;
+  height: 3.2rem;
+  width: 3.2rem;
   border-radius: 50%;
 }
 
 #integration-button:hover {
   border-color: whitesmoke;
+}
+
+#integration-button > span {
+  color: #1dc046;
+  font-weight: bolder;
+  font-size: 1.55rem;
+  font-stretch: ultra-expanded;
 }
 
 .pdf-title {
