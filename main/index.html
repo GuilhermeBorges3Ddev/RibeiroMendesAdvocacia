@@ -539,42 +539,10 @@
       </div>
     </section>
 
-    <!-- Protótipo do botão de integração da Nuhh -->
+    <!-- Protótipo do botão de integração com a área de biodiversidade -->
     <div class="integration-button-wrapper">
-      <div id="integration-with-ifood"></div>
-      <div id="integration-with-ml"></div>
-      <div id="integration-options">
-        <h5>O que precisa?</h5>
-        <div class="integrations-options-buttons">
-          <button
-            id="ifood-integration-button"
-            onclick="hideOrShowIfoodIntegration('integration-with-ifood', 'integration-options')"
-          >
-            <img
-              alt="iFood Logo"
-              src="./img/ifoodLogo.png"
-              height="60"
-              width="60"
-            />
-          </button>
-          <button
-            id="mercadoLivre-integration-button"
-            onclick="hideOrShowMercadoLivreIntegration('integration-with-ml', 'integration-options')"
-          >
-            <img
-              alt="Mercado Livre Logo"
-              src="./img/mercadoLivreLoggo.png"
-              height="60"
-              width="60"
-            />
-          </button>
-        </div>
-      </div>
-      <button
-        id="integration-button"
-        onclick="hideOrShowByTagname('integration-options')"
-      >
-        <img alt="Nuhh Logo" src="./img/Nuhh.png" />
+      <button id="integration-button" onclick="goToManifest()" target="_blank">
+        <img alt="Bio Logo" src="./img/bioLogo.png" height="45" width="45" />
       </button>
     </div>
 
@@ -597,6 +565,10 @@
 
     <!-- Scripts customizados utilizados neste site -->
     <script src="js/grayscale.min.js"></script>
-    <script src="js/integrations.js"></script>
+    <script>
+      function goToManifest() {
+        window.open("./files/MANIFESTO_SERRA_MANTIQUEIRA.pdf", "_blank");
+      }
+    </script>
   </body>
 </html>
