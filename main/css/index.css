@@ -7,17 +7,17 @@ html {
 }
 
 .integration-button-wrapper {
-  position: fixed;
-  bottom: 5%;
-  right: 2.5%;
+  position: fixed !important;
+  bottom: 5% !important;
+  right: 2.5% !important;
 }
 
 #integration-button {
-  border: 1px solid rgb(72, 255, 0);
-  background-color: #236f21;
-  height: 3.2rem;
-  width: 3.2rem;
-  border-radius: 50%;
+  border: 1px solid rgb(72, 255, 0) !important;
+  background-color: #236f21 !important;
+  height: 3.2rem !important;
+  width: 3.2rem !important;
+  border-radius: 50% !important;
 }
 
 #integration-button:hover {
