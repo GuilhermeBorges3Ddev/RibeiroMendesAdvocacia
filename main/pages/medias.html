@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Ribeiro Mendes Sociedade de Advogados</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Fontes customizadas -->
+    <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Varela+Round"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+      rel="stylesheet"
+    />
+
+    <!-- Importação de styles: Grayscale minificado -->
+    <link href="../css/index.css" rel="stylesheet" />
+    <link href="../css/grayscale.css" rel="stylesheet" />
+    <link href="../css/grayscale.min.css" rel="stylesheet" />
+  </head>
+
+  <body class="w-100" id="page-top">
+    <!-- Home -->
+    <header id="top-home" class="masthead-pdf">
+      <div class="container d-flex h-100 align-items-center">
+        <div class="mx-auto text-center">
+          <h1
+            class="mx-auto my-0 text-white text-bold text-uppercase pdf-title"
+          >
+            Ribeiro Mendes
+          </h1>
+          <h4 class="text-white-50 mx-auto my-2">
+            Arquivos para a promoção da biodiversidade:
+          </h4>
+        </div>
+      </div>
+    </header>
+
+    <section id="mediaSection" class="about-section-pdf text-center">
+      <!-- Botão de ida ao PDF do manifesto da serra da mantiqueira -->
+      <div class="container">
+        <div class="row text-white justify-content-center no-gutters py-3">
+          <button
+            type="button"
+            class="btn btn-dark media-btn-size"
+            onclick="goToManifestPdf()"
+          >
+            Ir ao manifesto da serra da mantiqueira em PDF
+          </button>
+        </div>
+        <!-- Botão para ir à página /main/pages/pdfs.html -->
+        <div class="row text-white justify-content-center no-gutters py-3">
+          <button
+            type="button"
+            class="btn btn-outline-primary media-btn-size outline-colors-and-borders"
+            onclick="goToPdfListPage()"
+          >
+            <i class="fas fa-file-pdf"></i>
+            Ir para a listagem de mais materiais em PDF
+          </button>
+        </div>
+        <!-- Botão para ir à página /main/pages/ppts.html -->
+        <div class="row text-white justify-content-center no-gutters py-3">
+          <button
+            type="button"
+            class="btn btn-outline-primary media-btn-size outline-colors-and-borders"
+            onclick="goToPowerpointsListPage()"
+          >
+            <i class="fas fa-file-powerpoint"></i>
+            Ir a listagem de materiais Powerpoint (.ppt/.pptx)
+          </button>
+        </div>
+        <!-- Botão para ir à página /main/pages/photos.html -->
+        <div class="row text-white justify-content-center no-gutters py-3">
+          <button
+            type="button"
+            class="btn btn-outline-primary media-btn-size outline-colors-and-borders"
+            onclick="goToPhotosListPage()"
+          >
+            <i class="fas fa-image"></i>
+            Ir a listagem de fotos das nossas presenças
+          </button>
+        </div>
+        <!-- Botão para ir à página /main/pages/videos.html -->
+        <div class="row text-white justify-content-center no-gutters py-3">
+          <button
+            type="button"
+            class="btn btn-outline-primary media-btn-size outline-colors-and-borders"
+            onclick="goToVideosListPage()"
+          >
+            <i class="fas fa-file-video"></i>
+            Ir a listagem dos nossos vídeos informacionais
+          </button>
+        </div>
+        <br /><br /><br />
+        <div class="pt-4"></div>
+    </section>
+
+    <!-- Botão fixo para voltarmos à home -->
+    <div class="integration-button-wrapper">
+      <button id="home-button" onclick="goToHomePage()" target="_self">
+        <i class="fas fa-home"></i>
+      </button>
+    </div>
+
+    <!-- Rodapé com os direitos autorais -->
+    <footer class="bg-black small text-center text-white-50">
+      <div class="container">
+        Todos os direitos reservados &copy;
+        <span class="ml-md-4">Ribeiro Mendes Advocacia 2019 - 2024</span>
+        <br /><br /><br />
+        <img src="../img/comodo_secure_104x59_transp.png" />
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Scripts customizados utilizados neste site -->
+    <script src="../js/grayscale.min.js"></script>
+    <script>
+      function goToHomePage() {
+        window.open("../index.html", "_self");
+      }
+      function goToPdfListPage() {
+        window.open("./pdfs.html", "_self");
+      }
+      function goToPowerpointsListPage() {
+        window.open("./ppts.html", "_self");
+      }
+      function goToPhotosListPage() {
+        window.open("./photos.html", "_self");
+      }
+      function goToVideosListPage() {
+        window.open("./videos.html", "_self");
+      }
+      function goToManifestPdf() {
+        window.open("../files/MANIFESTO_SERRA_MANTIQUEIRA.pdf", "_blank");
+      }
+    </script>
+  </body>
+</html>
