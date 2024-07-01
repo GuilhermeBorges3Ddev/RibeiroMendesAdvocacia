@@ -13,16 +13,60 @@ html {
   right: 2.5% !important;
 }
 
-#integration-button {
-  border: 1px solid rgb(72, 255, 0) !important;
-  background-color: #236f21 !important;
+.double-integration-button-wrapper {
+  position: fixed !important;
+  bottom: 5% !important;
+  right: 2.5% !important;
+}
+
+.double-integration-button-wrapper > button {
+  margin-right: 0.5rem;
+}
+
+.media-btn-size {
+  width: 37.5rem;
+}
+
+.outline-colors-and-borders {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #c5c6d0;
+  border: 1px solid blue;
+  font-weight: 600;
+  font-size: 1.75rem;
+}
+
+.outline-colors-and-borders > i {
+  padding-right: 0.75rem;
+  font-size: 1.45rem;
+}
+
+/* Modificações menos genéricas em botões específicos */
+
+#integration-button,
+#home-button {
   height: 3.2rem !important;
   width: 3.2rem !important;
   border-radius: 50% !important;
 }
 
+#integration-button {
+  border: 1px solid rgb(72, 255, 0) !important;
+  background-color: #236f21 !important;
+}
+
+#home-button {
+  border: 1px solid white !important;
+  background-color: #7e7e7e !important;
+}
+
 #integration-button:hover {
   border-color: whitesmoke;
+}
+
+#home-button:hover {
+  border-color: black;
 }
 
 #integration-button > span {
@@ -32,42 +76,8 @@ html {
   font-stretch: ultra-expanded;
 }
 
-/* Media queries para dispositivos móveis até 900px */
-@media only screen and (max-width: 900px) {
-  .integration-button-wrapper {
-    position: fixed;
-    top: 88.5% !important;
-    right: 4% !important;
-  }
-
-  #integration-button {
-    height: 2.5rem !important;
-    width: 2.5rem !important;
-  }
-
-  #integration-button > span {
-    font-size: 1.2rem;
-    font-stretch: normal;
-  }
-}
-
-/* Media queries para dispositivos móveis entre 901px e 1200px*/
-@media only screen and (min-width: 901px) and (max-width: 1200px) {
-  .integration-button-wrapper {
-    position: fixed;
-    top: 88% !important;
-    right: 2% !important;
-  }
-
-  #integration-button {
-    height: 2.5rem !important;
-    width: 2.5rem !important;
-  }
-
-  #integration-button > span {
-    font-size: 1.2rem;
-    font-stretch: normal;
-  }
+#home-button > i {
+  color: white;
 }
 
 .pdf-title {
@@ -82,4 +92,70 @@ html {
 .pdf-oblique {
   font-style: oblique 24deg;
   text-decoration: underline;
+}
+
+/* Media queries para dispositivos móveis até 414px */
+@media only screen and (max-width: 414px) {
+  #mediaSection > div {
+    margin-top: 4rem;
+  }
+  #home-button {
+    height: 2.25rem !important;
+    width: 2.25rem !important;
+  }
+}
+
+/* Media queries para dispositivos móveis entre 415px e 900px */
+@media only screen and (min-width: 415px) and (max-width: 900px) {
+  .integration-button-wrapper {
+    position: fixed;
+    top: 88.5% !important;
+    right: 4% !important;
+  }
+
+  .double-integration-button-wrapper {
+    position: fixed;
+    top: 88.5% !important;
+    right: 4% !important;
+  }
+
+  #integration-button,
+  #home-button {
+    height: 2.5rem !important;
+    width: 2.5rem !important;
+  }
+
+  #integration-button > span {
+    font-size: 1.2rem;
+    font-stretch: normal;
+  }
+  #mediaSection > div {
+    margin-top: 2.5rem;
+  }
+}
+
+/* Media queries para dispositivos móveis entre 901px e 1200px */
+@media only screen and (min-width: 901px) and (max-width: 1200px) {
+  .integration-button-wrapper {
+    position: fixed;
+    top: 88% !important;
+    right: 2% !important;
+  }
+
+  .double-integration-button-wrapper {
+    position: fixed;
+    top: 88% !important;
+    right: 2% !important;
+  }
+
+  #integration-button,
+  #home-button {
+    height: 2.5rem !important;
+    width: 2.5rem !important;
+  }
+
+  #integration-button > span {
+    font-size: 1.2rem;
+    font-stretch: normal;
+  }
 }
