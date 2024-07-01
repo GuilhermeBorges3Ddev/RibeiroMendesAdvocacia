@@ -13,6 +13,16 @@ html {
   right: 2.5% !important;
 }
 
+.double-integration-button-wrapper {
+  position: fixed !important;
+  bottom: 5% !important;
+  right: 2.5% !important;
+}
+
+.double-integration-button-wrapper > button {
+  margin-right: 0.5rem;
+}
+
 .media-btn-size {
   width: 37.5rem;
 }
@@ -70,6 +80,20 @@ html {
   color: white;
 }
 
+.pdf-title {
+  font-size: 60px;
+}
+
+.pdf-border-up-down {
+  border-top: 1px solid whitesmoke;
+  border-bottom: 1px solid whitesmoke;
+}
+
+.pdf-oblique {
+  font-style: oblique 24deg;
+  text-decoration: underline;
+}
+
 /* Media queries para dispositivos móveis até 414px */
 @media only screen and (max-width: 414px) {
   #mediaSection > div {
@@ -84,6 +108,12 @@ html {
 /* Media queries para dispositivos móveis entre 415px e 900px */
 @media only screen and (min-width: 415px) and (max-width: 900px) {
   .integration-button-wrapper {
+    position: fixed;
+    top: 88.5% !important;
+    right: 4% !important;
+  }
+
+  .double-integration-button-wrapper {
     position: fixed;
     top: 88.5% !important;
     right: 4% !important;
@@ -112,6 +142,12 @@ html {
     right: 2% !important;
   }
 
+  .double-integration-button-wrapper {
+    position: fixed;
+    top: 88% !important;
+    right: 2% !important;
+  }
+
   #integration-button,
   #home-button {
     height: 2.5rem !important;
@@ -122,18 +158,4 @@ html {
     font-size: 1.2rem;
     font-stretch: normal;
   }
-}
-
-.pdf-title {
-  font-size: 60px;
-}
-
-.pdf-border-up-down {
-  border-top: 1px solid whitesmoke;
-  border-bottom: 1px solid whitesmoke;
-}
-
-.pdf-oblique {
-  font-style: oblique 24deg;
-  text-decoration: underline;
 }
